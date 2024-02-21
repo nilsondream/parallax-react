@@ -1,0 +1,65 @@
+.styled-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: center;
+    transform: scale(2);
+    opacity: 0;
+    transition: .25s ease-in;
+
+    .links {
+        display: flex;
+        gap: 75px;
+
+        span {
+            cursor: pointer;
+            font-size: 45px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            opacity: .5;
+            transition: .25s;
+
+            &:first-child {
+                opacity: 1;
+            }
+
+            &:hover {
+                opacity: 1;
+                transition: .25s;
+            }
+        }
+    }
+
+    .social {
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        p {
+            cursor: pointer;
+            opacity: .25;
+            transition: .25s;
+
+            &:hover {
+                opacity: .5;
+                transition: .25s;
+            }
+        }
+    }
+}
+
+.menu-open {
+    transform: scale(1);
+    opacity: 1;
+    transition: .25s ease-in;
+    z-index: 888;
+}

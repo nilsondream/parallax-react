@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: url('../assets/Aeonik-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: url('../assets/Aeonik-Regular.otf');
+    font-weight: 400;
+}
+
+:root {
+    color-scheme: dark;
+    scrollbar-width: none;
+}
+
+html,
+body {
+    font-family: 'Aeonik';
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
+button {
+    background: none;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    outline: none;
+    border: none;
+    letter-spacing: inherit;
+}
+
+@import './Home.scss';
+@import './Navbar.scss';
+@import './Menu.scss';
